@@ -262,7 +262,7 @@ footer {
   right: 0;
   bottom: 0;
   font-size: 40px;
-  padding: 2em;
+  padding: 10px;
 }
 
 /* .mask:nth-child(1) {
@@ -331,7 +331,7 @@ footer {
 
 @media (max-width: 900px) {
   .logo h1 {
-    font-size: 48px;
+    font-size: 42px;
   }
   .sub-nav {
     right: 0;
@@ -396,21 +396,27 @@ footer {
     justify-content: space-between;
     width: 100%;
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .nav-buttons {
     margin: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
   }
 
   .slide-info {
     gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    display: grid;
   }
 
   .sub-nav,
   nav {
-    padding: 2em;
+    padding: 2rem 1rem;
   }
 
   nav {
