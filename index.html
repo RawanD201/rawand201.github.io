@@ -46,7 +46,7 @@
   <title>Rawand201</title>
 </head>
 
-<body onmousemove="getCordinate(event)">
+<body>
 
   <div class="loader">
     <div class="counter">
@@ -71,7 +71,6 @@
       </div>
 
 
-
       <div class="nav-buttons">
         <div class="btn">
           <a href="https://github.com/rawand201">
@@ -81,23 +80,10 @@
         </div>
 
         <div class="btn">
-          <a href="https://twitter.com/RawandRasooll">
-            <i class="devicon-twitter-original"></i>
-            Twitter
+          <a href="https://www.linkedin.com/in/rawand-rasool-19b2a1210/">
+            <i class="fab fa-linkedin-in"></i>
+            linkedin
           </a>
-        </div>
-
-        <div class="btn">
-          <a href="https://www.facebook.com/RawandRasooll">
-            <i class="fab fa-facebook-f"></i>
-            FacebooK
-          </a>
-        </div>
-
-        <div class="btn">
-          <a href="https://www.instagram.com/rawan_rasool_/">
-            <i class="fab fa-instagram"></i>
-            Instagram</a>
         </div>
       </div>
     </nav>
@@ -150,25 +136,35 @@
       </div>
 
       <div class="slide-info">
-        <div class="year">
-          <p>General Skills</p>
-          <p>Laravel</p>
+
+        <div class="experince">
+          <p>work experience</p>
+          <ul class="experience">
+            <li>AP Soft - Full-Stack Developer<span>(October, 2021 - October, 2023)</span>
+            </li>
+          </ul>
+          <ul class="experience">
+            <li>Avesta Group - IT Support<span>(April, 2021 - September, 2021)</span></li>
+          </ul>
         </div>
-        <div class="agency">
-          <p>agency</p>
-          <p>2024</p>
+
+        <div>
+          <p>Qualification</p>
+          <ul class="qualiify">
+            <li>Technical College Of Informatics</li>
+            <li>Bachelor, Information Techonology<span>(November 10, 2021 - Present)</span></li>
+          </ul>
+          <ul class="qualiify">
+            <li>Technical Institute Of Suleimani</li>
+            <li>Diploma, Information Technology <span>(November, 2019 - June, 2021)</span></li>
+          </ul>
         </div>
-        <div class="role">
-          <p>role</p>
-          <p>backend developer</p>
+
+        <div>
+          <p>Address</p>
+          <p class="address">Iraq, Kurdistan region, Sulaymaniyah</p>
         </div>
-        <div class="awards">
-          <p>awards</p>
-          <p>awards name</p>
-          <p>awards name</p>
-          <p>awards name</p>
-          <p>awards name</p>
-        </div>
+
       </div>
     </footer>
 
@@ -176,12 +172,10 @@
 
       <p class="primary padtext">technology im used ////</p>
       <div class="cb-tagreel-content">
-        <div
-          class="cb-tagreel-items"
-          role="marquee"
-        >
+        <div class="cb-tagreel-items">
 
           <div class="cb-tagreel-row">
+
 
             <div class="cb-tagreel-item">
               <span>
@@ -218,7 +212,12 @@
               </span>
             </div>
 
-            <div class="cb-tagreel-item  -stroke">
+          </div>
+
+          <div class="cb-tagreel-row -center">
+
+
+            <div class="cb-tagreel-item -stroke">
               <span>
                 <i class="devicon-microsoftsqlserver-plain"></i>
                 sql server
@@ -232,7 +231,7 @@
               </span>
             </div>
 
-            <div class="cb-tagreel-item  -stroke">
+            <div class="cb-tagreel-item -stroke">
               <span>
                 <i class="devicon-alpinejs-original"></i>
                 alpinejs
@@ -246,7 +245,11 @@
               </span>
             </div>
 
-            <div class="cb-tagreel-item  -stroke">
+          </div>
+
+          <div class="cb-tagreel-row">
+
+            <div class="cb-tagreel-item -stroke">
               <span>
                 <i class="devicon-sass-original"></i>
                 sass
@@ -274,12 +277,17 @@
               </span>
             </div>
 
-            <div class="cb-tagreel-item  -stroke">
+            <div class="cb-tagreel-item -stroke">
               <span>
                 <i class="devicon-nuxtjs-plain"></i>
                 nuxtjs
               </span>
             </div>
+
+          </div>
+
+          <div class="cb-tagreel-row -center">
+
 
             <div class="cb-tagreel-item">
               <span>
@@ -308,6 +316,8 @@
                 php
               </span>
             </div>
+
+            <div></div>
 
 
 
@@ -481,7 +491,6 @@
       gsap.to(loader, {
         opacity: 0,
         display: "none",
-        PointerEvents: "none",
         duration: 1,
         onComplete: () => {
           animateMasks();
@@ -504,31 +513,31 @@
 
 
 
-  const rows = document.querySelectorAll(".cb-tagreel-row");
+  // const rows = document.querySelectorAll(".cb-tagreel-row");
 
-  rows.forEach(function (e, i) {
-    let row_width = e.getBoundingClientRect().width;
-    let row_item_width = e.children[0].getBoundingClientRect().width;
-    let initial_offset = ((3 * row_item_width) / row_width) * 600 * -1;
-    let x_translation = initial_offset * -1;
-    // console.log(e.children[0].clientWidth);
-    console.log(x_translation);
+  // rows.forEach(function (e, i) {
+  //   let row_width = e.getBoundingClientRect().width;
+  //   let row_item_width = e.children[0].getBoundingClientRect().width;
+  //   let initial_offset = ((3 * row_item_width) / row_width) * 600 * -1;
+  //   let x_translation = initial_offset * -1;
+  //   // console.log(e.children[0].clientWidth);
+  //   console.log(x_translation);
 
-    gsap.set(e, {
-      xPercent: `${initial_offset}`
-    });
+  //   gsap.set(e, {
+  //     xPercent: `${initial_offset}`
+  //   });
 
-    let duration = 150 * (i + 1);
+  //   let duration = 150 * (i + 1);
 
-    var tl = gsap.timeline();
+  //   var tl = gsap.timeline();
 
-    tl.to(e, {
-      ease: "none",
-      duration: duration,
-      xPercent: 0,
-      repeat: -1
-    });
-  });
+  //   tl.to(e, {
+  //     ease: "none",
+  //     duration: duration,
+  //     xPercent: 0,
+  //     repeat: -1
+  //   });
+  // });
 
 </script>
 
