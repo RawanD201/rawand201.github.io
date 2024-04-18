@@ -134,26 +134,32 @@ nav {
   text-transform: uppercase;
 }
 
-li {
+/* li {
   margin-left: 20px;
-}
+} */
 
 .qualiify,
 .address,
 .experience {
   font-size: 16px;
   font-family: 'cera';
+  font-weight: bold;
   color: var(--color-accent);
 }
 .qualiify li:last-child {
-  margin-left: 30px;
   list-style: none;
 }
 
-.qualiify li span,
-.experience li span {
-  font-size: 12px;
-  padding-left: 5px;
+.smaller-date {
+  display: flex;
+  gap: 2px;
+}
+.smaller-date span {
+  font-size: 11px;
+  align-self: end;
+}
+.smaller-date > li {
+  margin-left: 10px;
 }
 
 button,
@@ -203,8 +209,8 @@ a:hover::after {
 
 .sub-nav {
   position: relative;
-  right: -10%;
-  width: 90%;
+  right: -5%;
+  width: 95%;
   padding: 4em;
   gap: 2em;
   display: flex;
@@ -212,18 +218,29 @@ a:hover::after {
   color: var(--color-text);
 }
 
+.efhtrw {
+  font-weight: bold;
+  padding: 4px;
+  font-family: 'cera';
+  color: var(--color-accent);
+  width: 70%;
+}
+.efhtrw::first-letter {
+  font-size: 2rem;
+  margin-inline: 1px;
+}
+
 .intero {
   width: 70%;
 }
-
-.intero ul {
+.intero span {
+  font-weight: bold;
+  padding: 4px;
   width: 70%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   font-family: 'cera';
-}
-.intero ul li {
   color: var(--color-accent);
 }
 
@@ -362,9 +379,15 @@ footer {
   z-index: 1;
 }
 
-/* //////////////// */
-
 @media (max-width: 1600px) {
+  .intero span,
+  .efhtrw {
+    width: 100%;
+    padding: 8px;
+  }
+  li {
+    list-style: none;
+  }
   .logo h1 {
     font-size: 90px;
   }
