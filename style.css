@@ -32,6 +32,7 @@ svg {
 
 body,
 html {
+  overflow-x: hidden;
   height: 100vh;
   font-family: 'Monorama';
   background-color: var(--color-text);
